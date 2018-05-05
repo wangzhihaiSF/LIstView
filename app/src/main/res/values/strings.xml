@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ListViewTest</string>
+    <string name="fruit_image">水果图片</string>
+</resources>
