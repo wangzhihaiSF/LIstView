@@ -27,11 +27,12 @@ public class FruitAdapter extends ArrayAdapter<Fruit> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        Fruit fruit = getItem(position);
+        Fruit fruit = getItem(position); //获得当前项的水果实例
         View view;
         ViewHolder viewHolder;
 
-        //加载缓存的 view
+        //convertView 加载缓存的 view
+        //LayoutInflater 为子项加载我们传入的布局
         if (convertView == null) {
             view = LayoutInflater.from(getContext()).inflate(resourceId, parent, false);
             viewHolder = new ViewHolder();
